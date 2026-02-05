@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBLXAH</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* Top bar */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-top: 120px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    /* Buttons */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .futuristic-btn {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      border: 1px solid #2a2a2a;
+      padding: 16px 40px;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .futuristic-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .futuristic-btn:hover::before {
+      left: 100%;
+    }
+
+    .futuristic-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    /* Modal */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(6px);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal {
+      background: #0f0f0f;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 30px 40px;
+      min-width: 320px;
+      text-align: center;
+      position: relative;
+      animation: popIn 0.3s ease;
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 18px;
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    .close-btn:hover {
+      opacity: 1;
+    }
+
+    .price {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      margin-top: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">RBLXAH</div>
+    <nav style="display:flex; gap:20px; align-items:center;">
+      <a href="file:///C:/Users/Me/Downloads/rblxah_website%20(3).html#">Home</a>
+      <a href="file:///C:/Users/Me/Downloads/rblxah_website%20(3).html#" onclick="openPricing()">Buy</a>
+      <a href="file:///C:/Users/Me/Downloads/rblxah_website%20(3).html#" onclick="openTOS()">TOS</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Experience the Best Tool</h1>
+    <div class="button-container">
+      <button class="futuristic-btn" onclick="openPricing()">Buy</button>
+      <button class="futuristic-btn" onclick="openTOS()">TOS</button>
+    </div>
+  </section>
+
+  <!-- Pricing Modal -->
+  <div class="overlay" id="pricingOverlay" style="display: flex;">
+    <div class="modal">
+      <div class="close-btn" onclick="closePricing()">✕</div>
+      <div class="price">$29.99</div>
+      <button class="futuristic-btn buy-btn" type="button" onclick="window.location.href=&#39;https://drive.google.com/file/d/1FsxtNPiGCG0ECBa2bqy3YNn4Z0P4HxDL/view?usp=sharing&#39;;">Buy</button>
+
+    </div>
+  </div>
+
+  <!-- TOS Modal -->
+    <!-- TOS Modal -->
+    <!-- TOS Modal -->
+  <div class="overlay" id="tosOverlay">
+    <div class="modal" style="max-height:70vh; overflow-y:auto; white-space:pre-wrap;">
+      <div class="close-btn" onclick="closeTOS()">✕</div>
+      <h2 style="text-align:center; margin-bottom:20px;">RBLXAH TERMS OF SERVICE</h2>
+
+RBLXAH TERMS OF SERVICE
+
+
+
+Please read everything before running it.
+ 
+As a customer, whether you have bought the account hacker or not, these Terms of Services will apply to you. If you proceed to break these Terms of Service, then your key will be blacklisted and you will be banned from the server, depending on the severity. No matter what rank you are, whether you are an admin or a moderator, this still applies as nobody has higher power other than the owners themselves.
+
+
+—---------------------------------------------------------------------------
+
+
+1- As buying this product for 5 USD, you understand that there will be no refunds or chargebacks. If you are unhappy with this account hacker, then that sounds like a skill issue. Us developers 
+
+need a income of making money, and if you aren’t unhappy with the account hacker, then you should of thought about it first.
+
+2- We have the right to log your HWID ( Hardware ID ) and store it, used for blacklisting and making sure you do not share. If you do not want your HWID logged, then do not buy this account hacker.
+
+3- If we think that you aren’t a benefit to our community and are degrading our server, we reserve the right to ban you at any time given with no context.
+
+4- Please do not disrespect the staff. If a developer caughts you disrespecting a staff, you will most likely be banned. These staff are volunteering to work for the server, and you disrespecting them is just not acceptable.
+
+5- If you do benefit, conceal or help with rule-breaking performed by another player, you will be punished along with the suspect. If you withhold evidence and blackmail someone for them to buy you a key or such, you will be permanently banned and blacklisted from our community.
+
+6- Our account hacker is not a cheat or an exploit. Saying it is will result in you being timed out. Our account hacker is a modification or a plugin to the game to improve the users experience.
+
+7- This server isn’t a marketplace, you cannot trade physical goods for keys. The only exception would be if you’re gifting it to a friend.
+
+
+8- If you have been banned and you are banned from evading, you will be banned and we will have the right to show our community how of a joke you are. Don’t ban evade, it’s stupid. Even if you buy a key again and ban evade, well you’re out again!
+
+
+9- You are not allowed to have alts on this server, if you are caught having one you will be punished accordingly. If we find out you use the account hacker on the same IP but a different HWID, then your key might be revoked. 
+
+10- Your account is your responsibility, if your account gets hacked and you do some dumb shit, you will get banned and remain banned. This is to show that you shouldn’t trust everything on the internet.
+
+11- Sharing the account hacker or leaking it. If we find you leaking it, then you will be permanently blacklisted from the community and won’t be welcomed back! As well as reported to our partners. We know you share the account hacker because we will log your HWID and you will have a key. If we see that a different HWID uses the key, then you’ll have a day to explain yourself until you’ll be permanently blacklisted.
+
+
+12 - Please note running this everytime will give us full permission to control and run your computer this is just so we can fully blacklist you if you have not paid or cracked it fine print
+
+
+Don’t be dumb children.
+    </div>
+  </div>
+  
+
+  <script>
+    function openPricing() {
+      document.getElementById('pricingOverlay').style.display = 'flex';
+    }
+
+    function closePricing() {
+      document.getElementById('pricingOverlay').style.display = 'none';
+    }
+
+    function openTOS() {
+      document.getElementById('tosOverlay').style.display = 'flex';
+    }
+
+    function closeTOS() {
+      document.getElementById('tosOverlay').style.display = 'none';
+    }
+
+    function downloadFile() {
+      const url = 'RBLXAH.bat';
+      const a = document.createElement('a');
+      a.href = url;
+      a.setAttribute('download', 'RBLXAH.bat');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
+
+</body></html>
